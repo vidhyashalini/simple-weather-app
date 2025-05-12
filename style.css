@@ -16,19 +16,18 @@ body {
 .container {
     max-width: 800px;
     margin: 20px auto; /* Adjust top margin as needed */
-    background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a semi-transparent background color for readability */
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-image: url('image1.webp'); /* Set the background image */
-    background-size: cover; /* Scale the image to cover the container */
-    background-position: center; /* Center the image within the container */
+    background-image: url('image1.webp'); /* to Set the background image */
+    background-size: cover; 
+    background-position: center; 
     background-repeat: no-repeat; /* Prevent tiling */
     color: #333; /* Adjust text color if needed for image visibility */
 }
 body {
-    /* ... other body styles ... */
-    margin: 0; /* Remove default body margin to allow full-height cover */
+     margin: 0; 
 }
 h1, h2 {
     text-align: center;
