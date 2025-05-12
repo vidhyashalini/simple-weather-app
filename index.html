@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Weather Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Simple Weather Checker</h1>
+
+        <div class="weather-input">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+
+        <div id="weather-info" class="weather-info hidden">
+            <h3>Current Weather in <span id="city-name"></span></h3>
+            <div class="weather-data">
+                <div><strong>Temperature:</strong> <span id="temperature"></span></div>
+                <div><strong>Humidity:</strong> <span id="humidity"></span></div>
+                <div><strong>Condition:</strong> <span id="condition"></span></div>
+            </div>
+            <button id="save-city-btn" class="save-button">Save City</button>
+        </div>
+
+        <div class="comparison-section">
+            <h2>Compare Weather</h2>
+            <div class="comparison-inputs">
+                <input type="text" id="city1-input" placeholder="Enter first city">
+                <input type="text" id="city2-input" placeholder="Enter second city">
+                <button onclick="compareWeather()">Compare</button>
+            </div>
+            <div id="comparison-results" class="comparison-results hidden">
+                <div class="city-weather">
+                    <h4>Weather in <span id="city1-name"></span></h4>
+                    <div class="weather-data">
+                        <div><strong>Temperature:</strong> <span id="temperature1"></span></div>
+                        <div><strong>Humidity:</strong> <span id="humidity1"></span></div>
+                        <div><strong>Condition:</strong> <span id="condition1"></span></div>
+                    </div>
+                </div>
+                <div class="city-weather">
+                    <h4>Weather in <span id="city2-name"></span></h4>
+                    <div class="weather-data">
+                        <div><strong>Temperature:</strong> <span id="temperature2"></span></div>
+                        <div><strong>Humidity:</strong> <span id="humidity2"></span></div>
+                        <div><strong>Condition:</strong> <span id="condition2"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="favorite-cities">
+            <h2>Favorite Cities</h2>
+            <ul id="favorite-list" class="favorite-list">
+                </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
